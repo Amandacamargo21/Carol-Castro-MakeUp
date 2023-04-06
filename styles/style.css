@@ -84,6 +84,8 @@ a {
 .container_1 {
   background-color: aliceblue;
   padding: 80px;
+  overflow-x: hidden;
+
 }
 
 .menu-icon {
@@ -304,6 +306,7 @@ a {
 
 
 .cards {
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -316,4 +319,119 @@ a {
 .portifolio_img {
   height: 300px;
   width: 320px;
+}
+
+/* Card Slider*/
+
+.my-card {
+  margin: 20px;
+  /* width: 100px;
+  height: 100px;
+  background: rebeccapurple;
+  color: white;
+  text-align: center;
+  line-height: 100px; */
+}
+
+.carousel {
+  margin: 25px 75px;
+}
+
+.carousel-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.carousel-content {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+
+  display: flex;
+  margin: 0 35px;
+  max-width: 50%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.carousel-content>* {
+  /* flex: 0 0 auto;
+  margin-right: 50px; */
+}
+
+.carousel-content> :last-child {
+  margin-right: 0;
+}
+
+.carousel-arrow {
+  flex: 0 0 auto;
+  width: 35px;
+  height: 35px;
+  border: 2px solid black;
+  transform: rotate(45deg);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.carousel-arrow:hover {
+  transform: rotate(45deg) scale(1.20);
+}
+
+.carousel-arrow-disabled,
+.carousel-arrow-disabled:hover {
+  opacity: 0.25;
+  transform: rotate(45deg);
+  cursor: auto;
+}
+
+.carousel-arrow-left {
+  border-top: none;
+  border-right: none;
+  right: -3%;
+  position: relative;
+}
+
+.carousel-arrow-left:hover {
+  border-bottom: 4px solid black;
+  border-left: 4px solid black;
+}
+
+.carousel-arrow-right:hover {
+  border-top: 4px solid black;
+  border-right: 4px solid black;
+}
+
+.carousel-arrow-right {
+  border-bottom: none;
+  border-left: none;
+  left: -3%;
+  position: relative;
+}
+
+.carousel-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 15px;
+  margin: 0 15px;
+  border: 2px solid rgb(255, 255, 255);
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.carousel-dot:hover {
+  background-color: lightgray;
+}
+
+.carousel-dot-active,
+.carousel-dot-active:hover {
+  background-color: rgb(255, 255, 255);
+  cursor: auto;
 }
