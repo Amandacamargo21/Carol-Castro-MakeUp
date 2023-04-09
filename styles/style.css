@@ -239,7 +239,7 @@ a {
   background: #a5a3a6;
   height: 100vh;
   display: flex;
-  background-image: linear-gradient(272deg, #aaa5ad -7%, #524545e3 100%);
+  /* background-image: linear-gradient(272deg, #aaa5ad -7%, #524545e3 100%); */
   justify-content: center;
 
 }
@@ -251,18 +251,18 @@ a {
 }
 
 .photo {
-  height: 100vh;
   background-image: url(/assets/images/profile-removebg-previe1w.png);
-  -webkit-mask-image: linear-gradient(270deg, transparent 0%, black 20%);
-  height: 100vh;
-  width: auto;
-  box-shadow: 5px 10px #888888;
+  /* -webkit-mask-image: linear-gradient(270deg, transparent 0%, black 20%); */
+  height: 70vh;
+  width: 30vw;
+  /* box-shadow: 5px 10px #888888; */
+  background-position: center;
+  background-size: cover;
 }
 
 .personal_photo {}
 
 .description {
-  margin: auto;
   width: 30%;
   position: relative;
 }
@@ -293,8 +293,17 @@ a {
 }
 
 .container {
-  width: 60%;
-  margin: 2rem auto;
+  width: 80%;
+  margin: auto;
+
+}
+
+.container_center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 80px;
+  gap: 80px;
 }
 
 .gallery {
@@ -348,7 +357,115 @@ a {
 
 .gallery__item--6 {
   grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+.gallery__item--7 {
+  grid-column-start: 7;
   grid-column-end: 9;
   grid-row-start: 6;
   grid-row-end: 9;
+}
+
+/*Serviços oferecidos*/
+
+.container2 {
+  width: 80%;
+  margin: auto;
+  padding: 80px;
+}
+
+.servicos {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.servico__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--description-text2);
+  font-weight: 200;
+}
+
+.servico__item__img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+/* Depoimentos*/
+
+.container3 {
+  padding: 80px;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  text-align: center;
+}
+
+/*Contato*/
+
+.container4 {
+  background-image: url(/assets/images/pink-color-powder-splashing-black-backdrop.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contato {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url(/assets/images/fundo-preto-e-branco.jpg);
+  width: 50%;
+  height: 85%;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 0px 1px 37px 17px #000000;
+}
+
+.container_msg {
+  width: 30%;
+  background-color: #00000073;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.msg_final {
+  font-weight: 200;
+  font-family: var(--description-text2);
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 7px;
+}
+
+.whats_btn {
+  width: 20em;
+  height: 3em;
+  font-family: var(--description-text);
+  border-radius: 20px;
+  background-color: #2e9430;
+  color: #a5a3a6;
+  border: none;
+  box-shadow: 0px 0px 10px 3px black;
 }
