@@ -14,6 +14,8 @@
 .contact_header {
   background-color: #08080845;
   padding: 10px;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .contacts {
@@ -81,6 +83,7 @@ nav {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 .nav_links {
@@ -121,7 +124,7 @@ a {
   height: 100px;
   width: 80px;
   position: absolute;
-  top: 5%;
+  top: 7%;
   right: 0;
   display: flex;
   justify-content: center;
@@ -573,6 +576,10 @@ footer {
   background-position-y: 50%;
 }
 
+.contact_header .social-icons {
+  width: 25%;
+}
+
 .social-icons {
   display: flex;
   justify-content: space-between;
@@ -617,5 +624,99 @@ a:visited {
 
   .menu-items {
     width: auto;
+  }
+
+  .container_ {
+    background-image: linear-gradient(2deg, #000000 -7%, #52454500 50%);
+  }
+
+  .sobre_mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo {
+    background-image: url(/assets/images/fundo-preto-e-branco.jpg);
+    -webkit-mask-image: linear-gradient(0deg, transparent 0%, black 20%);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .description {
+    margin: 5%;
+    width: auto;
+  }
+
+  .container_center {
+    flex-direction: column;
+  }
+
+  .gallery {
+    grid-template-rows: repeat(8, 10vw);
+    grid-gap: 1rem;
+  }
+
+  .container2 {
+    height: auto;
+    padding: 5%;
+  }
+
+  .servicos {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .servico__item {
+    width: 195px;
+  }
+
+  .aspas {
+    top: -20px;
+    left: -15px;
+  }
+
+  .aspas-direita {
+    bottom: 60px;
+  }
+
+  .container4 {
+    width: 100%;
+  }
+
+  .msg_final {
+    padding: 5%;
+  }
+
+  .container_footer {
+    flex-direction: column;
+  }
+
+  .logo_footer {
+    width: 100%;
+    background-position: center;
+    height: 25vh;
+  }
+
+  .col-md-4 {
+    margin: 10px;
+  }
+
+  .row {
+    padding: 0 20% 10%;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer_nav {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    margin: 5px;
   }
 }
