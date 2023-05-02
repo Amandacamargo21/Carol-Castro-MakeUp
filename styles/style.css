@@ -687,6 +687,8 @@ a:visited {
 
   .aspas-direita {
     bottom: 60px;
+    left: 19px;
+
   }
 
   .container4 {
@@ -725,6 +727,11 @@ a:visited {
     font-size: 11px;
     letter-spacing: 0.5px;
     margin: 5px;
+    flex-direction: column;
+  }
+
+  .footer_p {
+    padding: 5px;
   }
 
   .parallax {
