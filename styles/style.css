@@ -719,4 +719,12 @@ a:visited {
     letter-spacing: 0.5px;
     margin: 5px;
   }
+
+  .parallax {
+    background-attachment: unset;
+  }
+
+  .container4 {
+    background-attachment: unset;
+  }
 }
