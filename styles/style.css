@@ -345,6 +345,12 @@ a {
   height: 100%;
   object-fit: cover;
   display: block;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.gallery__img:hover {
+  transform: scale(0.9);
 }
 
 .img4 {
