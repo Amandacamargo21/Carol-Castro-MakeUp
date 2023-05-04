@@ -300,6 +300,7 @@ a {
   font-weight: 300;
   color: #ffffff;
   letter-spacing: 2px;
+  font-size: 40px;
 }
 
 .sub_titulo {
@@ -308,6 +309,7 @@ a {
   font-weight: 300;
   color: #000;
   letter-spacing: 2px;
+  font-size: 40px;
 }
 
 .sub_titulo_name {
@@ -619,6 +621,12 @@ a:visited {
   justify-content: center;
   font-size: 10px;
   letter-spacing: 0.5px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col-md-4 {
+  font-size: 20px;
 }
 
 /*Responsividade*/
@@ -634,7 +642,7 @@ a:visited {
 
   .container_ {
     background-image: linear-gradient(2deg, #000000 -7%, #52454500 50%);
-    height: 100vh;
+    height: auto;
   }
 
   .sobre_mim {
@@ -646,7 +654,7 @@ a:visited {
   .photo {
     background-image: url(/assets/images/fundo-preto-e-branco.jpg);
     -webkit-mask-image: linear-gradient(0deg, transparent 0%, black 20%);
-    height: 100%;
+    height: 50vh;
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -655,6 +663,10 @@ a:visited {
   .description {
     margin: 5%;
     width: auto;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .container_center {
@@ -669,6 +681,7 @@ a:visited {
   .container2 {
     height: auto;
     padding: 5%;
+    gap: 20px;
   }
 
   .servicos {
